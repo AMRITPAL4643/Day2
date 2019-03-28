@@ -45,6 +45,13 @@ public class MainActivity extends AppCompatActivity
                 lblmessage.setText(error.toString());
             }
         });
+        btnclear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                edtEmail.getText().clear();
+                edtpassword.getText().clear();
+            }
+        });
 
     }
 }
