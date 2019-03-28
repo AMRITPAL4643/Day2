@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity
    private Button btnsignin;
    private Button btnclear;
    private TextView lblmessage;
+   String error;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +33,16 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v)
             {
                 String email = edtEmail.getText().toString();
-                Toast.makeText(MainActivity.this,email,Toast.LENGTH_SHORT).show();
+                String pass = edtpassword.getText().toString();
+
+                if(email.equals("amrit@.com") && pass.equals("Amrit"))
+                {
+                    error = "login success";
+                }else
+                {
+                    error = "try again";
+                }
+                lblmessage.setText(error.toString());
             }
         });
 

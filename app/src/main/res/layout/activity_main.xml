@@ -25,9 +25,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:ems="10"
+        android:hint="Enter Email ID"
         android:inputType="textPersonName"
-        android:paddingBottom="22dp"
-        android:text="Enter Email ID" />
+        android:paddingBottom="22dp" />
 
     <EditText
 
@@ -37,8 +37,8 @@
         android:layout_marginTop="20dp"
         android:layout_weight="0"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Enter Password" />
+        android:hint="Enter password"
+        android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/lblmessage"
