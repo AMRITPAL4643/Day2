@@ -1,5 +1,6 @@
 package com.example.day2;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -41,6 +42,11 @@ public class MainActivity extends AppCompatActivity
                 {
                     lblmessage.setTextColor(Color.GREEN);
                     error = "login success";
+// navigate to next screen
+                    Intent mIntent = new Intent(MainActivity.this,HomeActivity.class);
+                    //set value to pass next screen
+                    mIntent.putExtra("name","Amritpal singh");
+                    startActivity(mIntent);
 
 
 
