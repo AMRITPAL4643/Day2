@@ -1,5 +1,6 @@
 package com.example.day2;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity
    private Button btnclear;
    private TextView lblmessage;
    String error;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,10 +39,16 @@ public class MainActivity extends AppCompatActivity
 
                 if(email.equals("amrit@.com") && pass.equals("Amrit"))
                 {
+                    lblmessage.setTextColor(Color.GREEN);
                     error = "login success";
+
+
+
                 }else
                 {
+                    lblmessage.setTextColor(Color.RED);
                     error = "try again";
+
                 }
                 lblmessage.setText(error.toString());
             }
