@@ -4,7 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="@android:color/holo_orange_light"
+    android:gravity="bottom|center|top"
     tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/lblcalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Calculator"
+        android:textColor="@android:color/black"
+        android:textSize="60sp" />
+
+    <EditText
+        android:id="@+id/EnterNumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblcalculator"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="enter number 1"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/EnterNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EnterNumber1"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="enter number 2"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnSUB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EnterNumber2"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/btnADD"
+        android:hint="SUB" />
+
+    <Button
+        android:id="@+id/btnADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EnterNumber2"
+        android:layout_marginTop="20dp"
+        android:hint="ADD" />
+
+    <Button
+        android:id="@+id/btnDIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EnterNumber2"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/btnSUB"
+        android:hint="DIV" />
+
+    <Button
+        android:id="@+id/btnMUL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EnterNumber2"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/btnDIV"
+        android:hint="MUL" />
 
 </RelativeLayout>
